@@ -61,7 +61,7 @@ export default async function AINewsPage() {
     return (
         <div className="min-h-screen bg-black text-white flex flex-col items-center justify-start py-8 px-4">
             <div className="w-full max-w-3xl mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-2">
+                <h1 className="text-4xl font-bold text-center mb-2 funnel-display font-[family-name:var(--font-funnel-display)]">
                     AI News Report
                 </h1>
                 <p className="text-center text-gray-400 mb-8">
@@ -84,7 +84,7 @@ export default async function AINewsPage() {
                                     variant="outline"
                                     className="bg-gray-900 text-gray-400 border-gray-800 hover:bg-gray-800 text-xs opacity-70"
                                 >
-                                    Cached
+                                    cached
                                 </Badge>
                             </div>
                         )}
