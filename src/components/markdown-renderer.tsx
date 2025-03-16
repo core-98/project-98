@@ -21,7 +21,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         ol: ({...props}) => <ol className="list-decimal pl-5 mb-4" {...props} />,
         li: ({...props}) => <li className="mb-1" {...props} />,
         blockquote: ({...props}) => <blockquote className="border-l-4 border-gray-700 pl-4 italic my-4" {...props} />,
-        code: ({node, inline, ...props}: {node?: any, inline?: boolean} & React.HTMLAttributes<HTMLElement>) => (
+        code: ({inline, ...props}: {inline?: boolean} & React.HTMLAttributes<HTMLElement>) => (
           inline 
             ? <code className="bg-gray-800 px-1 rounded text-sm" {...props} /> 
             : <code className="block bg-gray-800 p-3 rounded text-sm overflow-x-auto my-4" {...props} />
