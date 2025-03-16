@@ -28,7 +28,18 @@ export default function RootLayout({
             <body
                 className={`${spaceGrotesk.variable} antialiased bg-black text-white`}
             >
-                {children}
+                <div className="flex flex-col min-h-screen">
+                    <header className="fixed top-0 w-full bg-black px-8 py-4">
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-2xl funnel-display font-[family-name:var(--font-funnel-display)]">
+                                core98
+                            </h2>
+                        </div>
+                    </header>
+                    <main className="mt-12 flex-grow w-full flex flex-col">
+                        {children}
+                    </main>
+                </div>
             </body>
         </html>
     );
