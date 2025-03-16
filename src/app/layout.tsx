@@ -12,6 +12,10 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
     title: "core98",
     description: "core98.club coming soon",
+    icons: {
+        icon: "/icon.svg",
+        apple: "/icon.svg",
+    },
 };
 
 export default function RootLayout({
